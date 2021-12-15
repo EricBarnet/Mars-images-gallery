@@ -7,6 +7,7 @@ import { HomeComponent } from './core/pages/home/home.component';
 import { HeaderComponent } from './features/header/header.component';
 import { FooterComponent } from './features/footer/footer.component';
 import { ContactComponent } from './core/pages/contact/contact.component';
+import { PerDaysPhotosComponent } from './core/pages/per-days-photos/per-days-photos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContactComponent } from './core/pages/contact/contact.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    PerDaysPhotosComponent
   ],
   imports: [
     BrowserModule,
