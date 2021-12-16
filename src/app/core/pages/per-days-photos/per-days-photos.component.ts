@@ -10,7 +10,7 @@ export class PerDaysPhotosComponent implements OnInit {
   constructor(private MarsImagesService: MarsImagesService) { }
 
   ngOnInit(): void {
-    console.log(this.MarsImagesService.getListImages());
+    
   }
 
 }
