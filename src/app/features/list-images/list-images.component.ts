@@ -11,6 +11,9 @@ export class ListImagesComponent implements OnInit {
   constructor(private PhotosDaysComponent: PerDaysPhotosComponent) { }
   
   @Input() marsPhotos = [];
+  @Input() anneePhotos = "";
+  @Input() moisPhotos = "";
+  @Input() jourPhotos = "";
   
   ngOnInit(): void {
     console.log(this.marsPhotos)
