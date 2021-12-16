@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './core/pages/home/home.component';
 import { ContactComponent } from './core/pages/contact/contact.component';
 import { PerDaysPhotosComponent } from './core/pages/per-days-photos/per-days-photos.component';
+import { ListImagesComponent } from './features/list-images/list-images.component';
+import { ListImagesItemComponent } from './features/list-images-item/list-images-item.component';
 
 const routes: Routes = [{path: '', component: HomeComponent}, {path: 'home', component: HomeComponent}, {path: 'contact', component: ContactComponent}, {path: 'per-days-photos', component: PerDaysPhotosComponent}];
 

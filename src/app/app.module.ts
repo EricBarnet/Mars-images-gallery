@@ -9,7 +9,8 @@ import { FooterComponent } from './features/footer/footer.component';
 import { ContactComponent } from './core/pages/contact/contact.component';
 import { PerDaysPhotosComponent } from './core/pages/per-days-photos/per-days-photos.component';
 import { ListImagesComponent } from './features/list-images/list-images.component';
-
+import { ListImagesItemComponent } from './features/list-images-item/list-images-item.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +19,15 @@ import { ListImagesComponent } from './features/list-images/list-images.componen
     FooterComponent,
     ContactComponent,
     PerDaysPhotosComponent,
-    ListImagesComponent
+    ListImagesComponent,
+    ListImagesItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ListImagesItemComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

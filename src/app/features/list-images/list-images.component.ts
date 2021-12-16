@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PerDaysPhotosComponent } from 'src/app/core/pages/per-days-photos/per-days-photos.component';
 @Component({
   selector: 'app-list-images',
   templateUrl: './list-images.component.html',
@@ -6,15 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ListImagesComponent implements OnInit {
 
-  constructor() { }
-  @Input() marsPhotos: {
-    id: string;
-    img_src: string;
-}[] = [];
 
-
+  constructor(private PhotosDaysComponent: PerDaysPhotosComponent) { }
+  
+  @Input() marsPhotos = [];
+  
   ngOnInit(): void {
-    console.log(this.marsPhotos);
+    console.log(this.marsPhotos)
   }
  
   
