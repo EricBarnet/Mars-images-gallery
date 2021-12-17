@@ -1,0 +1,21 @@
+<app-header></app-header>
+<p>Photos par Jour</p>
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label"> Annee</label>
+      <input type="text" class="form-control"  aria-describedby="annee" name="annee" [(ngModel)]="annee">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Mois</label>
+        <input type="text" class="form-control"  aria-describedby="mois" name="mois" [(ngModel)]="mois">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Jour</label>
+        <input type="text" class="form-control"  aria-describedby="jour" name="jour" [(ngModel)]="jour">
+    </div> 
+    <button type="submit" class="btn btn-primary" (click)="dateChange()">Envoyez</button>
+  </form>
+<app-list-images [marsPhotos] = "marsPhotos">
+</app-list-images>
+
+<app-footer></app-footer>

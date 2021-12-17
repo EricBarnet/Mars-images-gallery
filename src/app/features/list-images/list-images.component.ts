@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PerDaysPhotosComponent } from 'src/app/core/pages/per-days-photos/per-days-photos.component';
+import { PerDaysPhotosComponent } from 'src/app/pages/per-days-photos/per-days-photos.component';
 @Component({
   selector: 'app-list-images',
   templateUrl: './list-images.component.html',

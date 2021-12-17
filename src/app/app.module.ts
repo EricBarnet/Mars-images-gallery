@@ -3,14 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './core/pages/home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './features/header/header.component';
 import { FooterComponent } from './features/footer/footer.component';
-import { ContactComponent } from './core/pages/contact/contact.component';
-import { PerDaysPhotosComponent } from './core/pages/per-days-photos/per-days-photos.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { PerDaysPhotosComponent } from './pages/per-days-photos/per-days-photos.component';
 import { ListImagesComponent } from './features/list-images/list-images.component';
 import { ListImagesItemComponent } from './features/list-images-item/list-images-item.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ListImagesItemComponent],
   bootstrap: [AppComponent]

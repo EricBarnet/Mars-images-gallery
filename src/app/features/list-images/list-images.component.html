@@ -1,6 +1,18 @@
-<ul>
-    <ng-container *ngIf="marsPhotos.length > 0">
-        <li *ngFor="let photoMars of marsPhotos"><app-list-images-item [photosMars] = "photoMars"></app-list-images-item></li>
-    </ng-container>
-    <button class="button" type="submit"></button>
-</ul>
+<div class="container">
+    <div class="row">
+
+        <ng-container *ngIf="marsPhotos.length > 0">
+
+            <ul>
+                <div *ngFor="let photoMars of marsPhotos" class="col">
+                    <app-list-images-item [photosMars]="photoMars"></app-list-images-item>
+                </div>
+
+            </ul>
+
+        </ng-container>
+
+        <button class="button" type="submit"></button>
+
+    </div>
+</div>
