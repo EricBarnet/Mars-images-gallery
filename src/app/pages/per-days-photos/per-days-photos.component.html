@@ -1,6 +1,7 @@
 <app-header></app-header>
-<p>Photos par Jour</p>
-<form>
+
+<form  class="container">
+  <h1 class="text-center">Photos par Jour</h1>
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label"> Annee</label>
       <input type="text" class="form-control"  aria-describedby="annee" name="annee" [(ngModel)]="annee">
@@ -13,7 +14,9 @@
         <label for="exampleInputEmail1" class="form-label"> Jour</label>
         <input type="text" class="form-control"  aria-describedby="jour" name="jour" [(ngModel)]="jour">
     </div> 
-    <button type="submit" class="btn btn-primary" (click)="dateChange()">Envoyez</button>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary" (click)="dateChange()">Envoyez</button>
+    </div>
   </form>
 <app-list-images [marsPhotos] = "marsPhotos">
 </app-list-images>
